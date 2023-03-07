@@ -358,4 +358,19 @@ data(Salaries, package="carData")
                      title="Bubble Chart", size="Engine\nDisplacement")
         ggplotly(q)
         
+      
 ```
+
+IMAGEN COVID:
+
+```{r}
+library(readr)
+owid_covid_data <- read_csv("C:/Users/mirei/Downloads/owid-covid-data.csv")
+
+
+```
+
+
+
+
+

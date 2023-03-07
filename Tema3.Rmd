@@ -367,6 +367,12 @@ IMAGEN COVID:
 library(readr)
 owid_covid_data <- read_csv("C:/Users/mirei/Downloads/owid-covid-data.csv")
 
+paises<-c("United States","Italy","France","Germany","Canada","Japan","United Kingdom","Spain")
+
+datos<-owid_covid_data%>% 
+  filter(location %in% paises)
+
+
 
 ```
 

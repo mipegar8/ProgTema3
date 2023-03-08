@@ -373,7 +373,7 @@ paises<-c("United States","Italy","France","Germany","Canada","Japan","United Ki
 datos<-owid_covid_data%>% 
   filter(location %in% paises)
 
-covid<-ggplot(datos,aes(x=date,y=new_deaths_smoothed_per_million,color=location,group=location))+geom_line(size=0.3)
+covid<-ggplot(datos,aes(x=date,y=new_deaths_smoothed_per_million,color=location,group=location))+geom_line(size=0.3)+labs(title="Daily new confirmed COVID-19 deaths per million people", subtitle = "7-days rolling average. For some countries the number of confirmed is much lower than the true number of deaths.This is because of limited testing and challenges in the attribution of the cause of death",x=" ", y=" ")+theme_classic()
 covid
 
 
